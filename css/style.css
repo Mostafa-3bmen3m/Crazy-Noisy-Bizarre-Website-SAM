@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    background-color: black;
+    min-width: 700vw;
+    height: 100vh;
+}
+audio{
+    display: none;
+}
+.wrapper{
+    color: white;
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    transition: 0.5s all;
+}
+.text{
+    transition: 0.5s all;
+}
+@keyframes Bomb {
+    
+    0%{scale: .9 .9;}
+    20%{scale: 1.1 1.1;}
+    40%{scale: 1 1;}
+    60%{scale: 1.2 1.2;}
+    80%{scale: 1.1 1.1;}
+    100%{scale: 1.3 1.3;}
+}
+
+
+@keyframes movex {
+    0%{translate: 20px 0;rotate: 20px 20px;}
+    5%{translate: -20px 0; rotate: -20px -20px;}
+    10%{translate: 0 0;}
+
+    15%{translate: -20px 0; rotate: -20px -20px;}
+    20%{translate: 0 0;}
+
+    25%{translate: -20px 0; rotate: -20px -20px;}
+    30%{translate: 0 0;}
+
+    35%{translate: -20px 0; rotate: -20px -20px;}
+    40%{translate: 0 0;}
+
+    45%{translate: -20px 0; rotate: -20px -20px;}
+    50%{translate: 0 0;}
+
+    55%{translate: -20px 0; rotate: -20px -20px;}
+    60%{translate: 0 0;}
+
+    65%{translate: -20px 0; rotate: -20px -20px;}
+    70%{translate: 0 0;}
+
+    75%{translate: -20px 0; rotate: -20px -20px;}
+    80%{translate: 0 0;}
+
+    85%{translate: -20px 0; rotate: -20px -20px;}
+    90%{translate: 0 0;}
+
+    95%{translate: -20px 0; rotate: -20px -20px;}
+    100%{translate: 0 0;}
+}

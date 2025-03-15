@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/images/download.jpg">
+    <title>crazy noisy bizarre Website</title>
+</head>
+<body>
+    
+    
+    <audio id="bg-music" src="assets/audio/246940-9197049f-e352-4a71-bdea-9303e664c54d.mp3" loop controls autoplay></audio>
+
+
+
+    <div class="wrapper" id="w">
+
+    </div>
+
+
+
+
+<script src="./js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bg-music");
+  
+      // Try to play the audio when the page loads
+      const playAudio = () => {
+        audio.play().then(() => {
+          console.log("Audio is playing.");
+        }).catch(error => {
+          console.log("Autoplay blocked, waiting for user interaction...");
+        });
+      };
+  
+      // Try playing audio immediately
+      playAudio();
+  
+      // If blocked, play audio on user interaction
+      document.addEventListener("click", playAudio, { once: true });
+    });
+  </script>
+</body>
+</html>
